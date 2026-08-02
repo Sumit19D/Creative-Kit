@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CreativeKit | Handmade Resin Art</title>
+
+    <meta
+        name="description"
+        content="Beautiful handmade resin art, personalised gifts, coasters, nameplates and more."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <div class="logo">
+        Creative<span>Kit</span>
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Shop</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="cart-button" onclick="openCart()">
+        🛒 Cart
+        <span id="cart-count">0</span>
+    </button>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <p class="small-heading">
+            HANDMADE • UNIQUE • PERSONALIZED
+        </p>
+
+        <h1>
+            Art That<br>
+            <span>Lasts Forever</span>
+        </h1>
+
+        <p>
+            Beautiful handmade resin creations crafted with love.
+            Discover unique gifts, home decor and personalized artwork.
+        </p>
+
+        <a href="#products" class="shop-button">
+            Explore Collection
+        </a>
+
+    </div>
+
+    <div class="hero-image">
+
+        <img
+            src="images/ChatGPT Image Aug 2, 2026, 01_07_07 PM.jpg"
+            alt="Handmade resin artwork"
+        >
+
+    </div>
+
+</section>
+
+
+<!-- ================= FEATURE SECTION ================= -->
+
+<section class="features">
+
+    <div>
+        <div class="feature-icon">✨</div>
+        <h3>Handmade</h3>
+        <p>Every piece is carefully crafted.</p>
+    </div>
+
+    <div>
+        <div class="feature-icon">💎</div>
+        <h3>Unique Designs</h3>
+        <p>No two resin pieces are exactly alike.</p>
+    </div>
+
+    <div>
+        <div class="feature-icon">🎁</div>
+        <h3>Perfect Gifts</h3>
+        <p>Personalized gifts for every occasion.</p>
+    </div>
+
+    <div>
+        <div class="feature-icon">📦</div>
+        <h3>Made to Order</h3>
+        <p>Custom designs available.</p>
+    </div>
+
+</section>
+
+
+<!-- ================= PRODUCTS ================= -->
+
+<section id="products" class="products-section">
+
+    <div class="section-heading">
+
+        <p>OUR COLLECTION</p>
+
+        <h2>
+            Handmade Resin Creations
+        </h2>
+
+        <span>
+            Find something beautiful for yourself or someone special.
+        </span>
+
+    </div>
+
+
+    <div id="product-container" class="product-grid">
+
+        <!-- Products will be loaded using JavaScript -->
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about" class="about-section">
+
+    <div class="about-image">
+
+        <img
+            src="images/rakhi.jpg"
+            alt="Resin artwork"
+        >
+
+    </div>
+
+    <div class="about-content">
+
+        <p>OUR STORY</p>
+
+        <h2>
+            Made With Creativity,
+            Passion & Love
+        </h2>
+
+        <p>
+            Welcome to CreativeKit, a small handmade art studio
+            where creativity meets resin.
+        </p>
+
+        <p>
+            Each product is carefully designed and handcrafted.
+            From personalized gifts to beautiful home décor,
+            every piece is made to be special.
+        </p>
+
+        <p>
+            Want something customized?
+            Contact us and let's create something unique for you.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="contact-section">
+
+    <p>GET IN TOUCH</p>
+
+    <h2>
+        Have a Custom Idea?
+    </h2>
+
+    <p>
+        Tell us what you have in mind and we'll create
+        something special for you.
+    </p>
+
+    <a
+        href="https://wa.me/919999999999"
+        target="_blank"
+        class="whatsapp-button"
+    >
+        💬 Chat on WhatsApp
+    </a>
+
+</section>
+
+
+<!-- ================= CART ================= -->
+
+<div id="cart-overlay" class="cart-overlay">
+
+    <div class="cart">
+
+        <div class="cart-header">
+
+            <h2>Your Cart</h2>
+
+            <button onclick="closeCart()">
+                ✕
+            </button>
+
+        </div>
+
+
+        <div id="cart-items">
+
+            <!-- Cart items -->
+
+        </div>
+
+
+        <div class="cart-total">
+
+            <span>Total</span>
+
+            <strong>
+                ₹<span id="cart-total">0</span>
+            </strong>
+
+        </div>
+
+
+        <button
+            class="checkout-button"
+            onclick="openCheckout()"
+        >
+            Proceed to Order
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- ================= CHECKOUT ================= -->
+
+<div id="checkout-overlay" class="checkout-overlay">
+
+    <div class="checkout">
+
+        <div class="checkout-header">
+
+            <h2>Place Your Order</h2>
+
+            <button onclick="closeCheckout()">
+                ✕
+            </button>
+
+        </div>
+
+
+        <form id="order-form">
+
+            <label>
+                Your Name
+            </label>
+
+            <input
+                type="text"
+                id="customer-name"
+                placeholder="Enter your name"
+                required
+            >
+
+
+            <label>
+                Mobile Number
+            </label>
+
+            <input
+                type="tel"
+                id="customer-phone"
+                placeholder="Enter mobile number"
+                required
+            >
+
+
+            <label>
+                Delivery Address
+            </label>
+
+            <textarea
+                id="customer-address"
+                placeholder="Enter complete delivery address"
+                required
+            ></textarea>
+
+
+            <label>
+                Special Instructions
+            </label>
+
+            <textarea
+                id="customer-note"
+                placeholder="Customization / name / color etc."
+            ></textarea>
+
+
+            <button
+                type="submit"
+                class="place-order-button"
+            >
+                📱 Place Order on WhatsApp
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<footer>
+
+    <div class="logo">
+        Creative<span>Kit</span>
+    </div>
+
+    <p>
+        Handmade with ❤️
+    </p>
+
+    <p>
+        © 2026 CreativeKit. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
