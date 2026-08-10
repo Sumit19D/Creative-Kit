@@ -6,42 +6,42 @@ const products = [
 
     {
         id: 1,
-        name: "Resin Rakhi",
-        price: 299,
+        name: "Resin Mini Rakhi",
+        price: 80,
         image: "images/rakhi.jpg",
-        description: "Beautiful handmade resin rakhi with personalized design."
+        description: "Beautiful handmade resin rakhi with name initial."
     },
 
     {
         id: 2,
-        name: "Resin Coaster Set",
-        price: 799,
-        image: "images/coaster.jpg",
-        description: "Elegant handmade resin coaster set for your home."
+        name: "Resin Rakhi",
+        price: 99,
+        image: "images/WhatsApp Image 2026-08-10 at 11.30.55 PM.jpeg",
+        description: "Beautiful handmade resin rakhi with full name."
     },
 
     {
         id: 3,
-        name: "Personalized Nameplate",
-        price: 1499,
-        image: "images/nameplate.jpg",
-        description: "Customized resin nameplate for your home."
+        name: "Resin Rakhi With Keychain",
+        price: 120,
+        image: "images/WhatsApp Image 2026-08-10 at 11.30.54 PM.jpeg",
+        description: "A beautiful Rakhi today, a keepsake keychain tomorrow."
     },
 
     {
         id: 4,
         name: "Resin Keychain",
-        price: 249,
-        image: "images/keychain.jpg",
+        price: 149,
+        image: "images/WhatsApp Image 2026-08-10 at 11.15.09 PM.jpeg",
         description: "Personalized handmade resin keychain."
     },
 
     {
         id: 5,
-        name: "Resin Serving Tray",
-        price: 1899,
-        image: "images/tray.jpg",
-        description: "Premium handmade resin serving tray."
+        name: "Resin Name Stand",
+        price: 799,
+        image: "images/WhatsApp Image 2026-08-10 at 11.15.09 PM (1).jpeg",
+        description: "Turn your name into a beautiful piece of art with our handcrafted Resin Name Stand."
     }
 
 ];
@@ -89,7 +89,8 @@ function displayProducts() {
                     <div class="product-bottom">
 
                         <span class="price">
-                            ₹${product.price}
+                            <strong>₹${product.price}</strong>
+                            <small>+ delivery charges</small>
                         </span>
 
                         <button
@@ -354,7 +355,7 @@ document
 
         let orderMessage =
 
-            `Hello ResinAura! 👋%0A%0A` +
+            `Hello CreativeKit.!!! 👋 %0A%0A` +
 
             `I would like to place an order.%0A%0A` +
 
@@ -413,7 +414,7 @@ document
         // ==================================
 
         const whatsappNumber =
-            "919999999999";
+            "8928061107";
 
 
         const whatsappURL =
