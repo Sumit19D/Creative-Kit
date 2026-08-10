@@ -41,7 +41,23 @@ const products = [
         name: "Resin Name Stand",
         price: 799,
         image: "images/WhatsApp Image 2026-08-10 at 11.15.09 PM (1).jpeg",
-        description: "Turn your name into a beautiful piece of art with our handcrafted Resin Name Stand."
+        description: "Your name, beautifully crafted into a little piece of art."
+    },
+
+    {
+        id: 6,
+        name: "Engagement Platter",
+        price: 1499,
+        image: "images/WhatsApp Image 2026-08-11 at 12.18.52 AM.jpeg",
+        description: "A beautiful way to present your rings today and cherish the memories forever."
+    },
+
+    {
+        id: 7,
+        name: "Resin Bracelete",
+        price: 120,
+        image: "images/WhatsApp Image 2026-08-11 at 12.20.39 AM.jpeg",
+        description: "Wear a little piece of art wherever you go."
     }
 
 ];
