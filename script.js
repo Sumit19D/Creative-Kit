@@ -48,7 +48,7 @@ const products = [
         id: 6,
         name: "Engagement Platter",
         price: 1499,
-        image: "images/WhatsApp Image 2026-08-11 at 12.18.52 AM.jpeg",
+        image: "images/Engagement Platter.jpeg",
         description: "A beautiful way to present your rings today and cherish the memories forever."
     },
 
@@ -56,7 +56,7 @@ const products = [
         id: 7,
         name: "Resin Bracelete",
         price: 120,
-        image: "images/WhatsApp Image 2026-08-11 at 12.20.39 AM.jpeg",
+        image: "images/Bracelate.jpeg",
         description: "Wear a little piece of art wherever you go."
     }
 
