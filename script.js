@@ -39,7 +39,7 @@ const products = [
     {
         id: 5,
         name: "Resin Name Stand",
-        price: 799,
+        price: 999,
         image: "images/WhatsApp Image 2026-08-10 at 11.15.09 PM (1).jpeg",
         description: "Your name, beautifully crafted into a little piece of art."
     },
